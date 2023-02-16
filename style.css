@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    font-family: 'Red Hat Display',    sans-serif;
+    background-image: url(./img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size: s; */
+    position: relative;
+    height: 100vh;
+    /* object-fit: st; */
+    /* position: static; */
+    background-color: hsl(225, 100%, 94%);
+}
+.container__img img{
+    width: 100%;
+}
+.container{
+    background: #fff;
+    width: 100%;
+    max-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px; 
+    overflow: hidden; 
+}
+
+.container__from{
+    padding: 7%;
+    text-align: center;
+}
+.title{
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+
+}
+.container__from .subtitle{
+    font-size: 14px;
+    color: #8a8a8a;
+    padding-bottom: 32px;
+}
+.container__from-music{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+.container__from-music .icono{
+    display: flex;
+    align-items: center;
+}
+.container__from-music .icono img{
+    width: 40px;
+}
+.container__from-music .icono div{
+    margin-left: 10px;
+}
+
+.container__from-music .icono div h5{
+    font-size: 14px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.container__from-music .icono div p{
+    font-size: 14px;
+}
+.container__from-music > a{
+    font-weight: 700;
+
+}
+.container__from-music > a:hover{
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(245, 75%, 60%);
+}
+.proceed-btn{
+    background-color: hsl(245, 75%, 52%);
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 32px;
+    
+}
+.proceed-btn:hover{
+    cursor: pointer;
+    background-color: hsl(245, 75%, 60%);
+}
+.container__from .cancel-btn{
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+.cancel-btn:hover{
+    color: #000;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+    header{
+        background-image: url(./img/pattern-background-mobile.svg);
+    }
+}  
